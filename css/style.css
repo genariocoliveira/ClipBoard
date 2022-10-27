@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+:root {
+    /* ### Primary */
+    --StrongCyan: hsl(171, 66%, 44%);
+    --LightBlue: hsl(233, 100%, 69%);
+
+    /* ### Neutral  */
+    --DarkGrayishBlue: hsl(210, 10%, 33%);
+    --GrayishBlue: hsl(201, 11%, 66%);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+h1,h2{
+    font-weight: 600;
+}
+#primary-section{
+    background: url('../images/bg-header-desktop.png') no-repeat;
+    background-size: contain;
+    height: 100vh;
+}
+.row p{
+    color: var(--GrayishBlue);
+}
+.content{
+    height: 100vh;
+}
+.align-btn{
+    display: flex;
+    justify-content: center;
+}
+.btn{
+    border-radius: 30px;
+    color: #fff;
+    width: 229px;
+    height: 55px;
+}
+.btn-green{
+    background: var(--StrongCyan);
+}
+.btn-violet{
+    background: var(--LightBlue);
+}
+.btn-green:hover{
+    box-shadow: 2px 2px 10px 0 #2ec1ab,
+                -2px -2px 10px 0 #2ec1ab;
+}
+.btn-violet:hover{
+    box-shadow: 2px 2px 10px 0 #6d7eff,
+                -2px -2px 10px 0 #6d7eff;
+}
+/* section2 */
+.section-h1{
+    font-weight: 600;
+}
+/* section3 */
+.section-3{
+    margin: 100px 0 0 0;
+}
+/* seção4 */
+.section-4{
+    margin: 50px 0 0 0;
+}
+.icon{
+    width: 70px;
+}
+/* section 5 */
+.section-5{
+    margin: 100px 0;
+}
+/* section 6 */
+.section-6{
+    margin: 150px 0;
+}
+footer{
+    background: #f5f5f5;
+}
+footer a{
+    color: var(--DarkGrayishBlue);
+    font-weight: 600;
+}
+footer a:hover{
+    color: var(--StrongCyan);
+    text-decoration: none;
+}
+footer i{
+    font-size: 30px;
+}
+.container-footer{
+    padding: 50px 0;
+    margin: 0 auto;
+    width: 90%;
+    display: flex;
+    align-items: center;
+}
+.container-footer .logo{
+    width: 60px;
+}
+.footer-logo{
+    flex: 1;
+}
+.link-footer{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+}
+.link-footer a{
+    margin: 10px 0;
+    width: 150px;
+}
+.icon-footer{
+    flex: 1;
+    display: flex;
+    justify-content: end;
+}
+/* =================================================== */
+@media (max-width: 375px){
+    #primary-section{
+        background: url('../images/bg-header-mobile.png') no-repeat;
+    }
+}
+ /* X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .align-btn{
+        flex-direction: column;
+        align-items: center;
+    }
+    .btn-green, 
+    .btn-violet{
+        width: 80%;
+        margin: 10px 0;
+    }
+}
+
+ /* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+    .row-section_2{
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .col-section_2{
+        width: 100%;
+        text-align: center;
+    }
+    /* seção 3 */
+    .crd{
+        margin: 20px 0 0 0;
+    }
+    /* section5  */
+    .section-5 .row .col-md-2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px 0;
+    }
+    /* footer */
+    .logo{
+        margin: 0 0 10px 0;
+    }
+    .container-footer{
+        display: flex;
+        flex-direction: column;
+    }
+    .link-footer{
+        text-align: center;
+    }
+    .icon-footer{
+        margin: 10px 0 0 0;
+    }
+}
+
+ /* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+
+}
+
+ /* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+
+}
+
+ /* X-Large devices (large desktops, less than 1400px) */
+@media (max-width: 1399.98px) {
+
+}
